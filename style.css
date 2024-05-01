@@ -1,0 +1,51 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(127, 127, 127);
+    width: 30px;
+    height: 500px;
+    transition-property: width;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+}
+
+.box:hover {
+    width: 250px;
+}
+
+.box:hover .list {
+    display: block;
+}
+
+.box:hover .texte {
+    display: none;
+}
+
+.list {
+    width: 200px;
+  
+    display: none;
+    margin: 0;
+}
+
+.text {
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 20px;
+    transition-property: color;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+}
+
+.text:hover {
+    color: yellow;
+}
+
+.texte {
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 20px;
+    writing-mode: vertical-rl;
+}
+
